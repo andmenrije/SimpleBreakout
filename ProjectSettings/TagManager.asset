@@ -10,6 +10,7 @@ TagManager:
   - MysteryBrick
   - Floor
   - Wall
+  - GreyBrick
   layers:
   - Default
   - TransparentFX

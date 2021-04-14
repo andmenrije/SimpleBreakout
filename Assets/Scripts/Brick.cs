@@ -27,6 +27,12 @@ public class Brick : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
+
+        if(this.gameObject.tag.Equals("GreyBrick"))
+        {
+            return;
+        }
+
         _life -= 1;
         if (_life <= 0)
         {
@@ -39,5 +45,6 @@ public class Brick : MonoBehaviour
         {
             GameManager.Instance.SetScore(GameManager.Instance.GetScore() + _perHitScore);
         }
+        
     }
 }
